@@ -2,6 +2,9 @@
   "name": "Constantine",
   "version": "1.0.0",
   "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss css/style.css -w"
+  },
   "author": "imed Drioua",
   "license": "MIT",
   "dependencies": {
