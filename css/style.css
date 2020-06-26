@@ -226,6 +226,8 @@ body {
   background-color: #F7F7F7;
   margin-top: -7.3rem;
   text-align: center; }
+  .information h2 {
+    margin-top: 15rem; }
 
 .cart {
   height: 52rem;
