@@ -55,10 +55,12 @@ body {
 
 .logo {
   position: absolute;
-  top: 4rem;
-  left: 4rem; }
+  top: 2rem;
+  left: 2rem; }
   .logo img {
-    height: 3.5rem; }
+    height: 3rem;
+    border-radius: 100%;
+   }
 
 .heading {
   position: absolute;
