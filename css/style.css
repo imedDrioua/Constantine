@@ -489,3 +489,48 @@ body {
 .navigation__checkbox:checked + .navigation__button .navigation__icon::after {
   top: 0;
   transform: rotate(-135deg); }
+
+.footer {
+  background-color: #333;
+  padding: 10rem 5rem;
+  font-size: 1.4rem;
+  color: lightgray; }
+  .footer__logo-box {
+    text-align: center;
+    margin-bottom: 8rem; }
+    .footer__logo-box p {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #7ed56f; }
+  .footer__logo {
+    width: 15rem;
+    height: auto;
+    border-radius: 50px; }
+  .footer__navigation {
+    border-top: 1px solid darkgray;
+    padding-top: 2rem;
+    display: inline-block; }
+  .footer__list {
+    list-style: none; }
+  .footer__item {
+    display: inline-block; }
+    .footer__item:not(:last-child) {
+      margin-right: 1.5rem; }
+  .footer__link:link, .footer__link:visited {
+    color: lightgray;
+    background-color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all .2s; }
+  .footer__link:hover, .footer__link:active {
+    color: #7ed56f;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.4);
+    transform: rotate(5deg) scale(1.3);
+    border-radius: 5px; }
+  .footer__copyright {
+    border-top: 1px solid darkgray;
+    padding-top: 2rem;
+    width: 40%;
+    float: right; }

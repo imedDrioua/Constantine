@@ -548,7 +548,7 @@ $color-black: #000;
         z-index: 1000;
         transition: transform .8s cubic-bezier(0.86, 0, 0.07, 1);
 
-        //transform: scale(80);
+
     }
     &__nav {
         height: 100vh;
@@ -603,9 +603,6 @@ $color-black: #000;
             transform: translateX(1rem);
         }
     }
-
-
-    //FUNCTIONALITY
     &__checkbox:checked ~ &__background {
         transform: scale(80);
     }
@@ -616,8 +613,6 @@ $color-black: #000;
         left: 0;
     }
 
-
-    //ICON
     &__icon {
         position: relative;
         margin-top: 3.5rem;
@@ -663,5 +658,75 @@ $color-black: #000;
     &__checkbox:checked + &__button &__icon::after {
         top: 0;
         transform: rotate(-135deg);
+    }
+}
+/////////////////////////////Foooter/////////////////////////////////////////////////////////////
+.footer {
+    background-color: #333;
+    padding: 10rem 5rem;
+    font-size: 1.4rem;
+    color: lightgray;
+
+    &__logo-box {
+        text-align: center;
+        margin-bottom: 8rem;
+        p{
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            color: $Light_green;
+        }
+    }
+
+    &__logo {
+        width: 15rem;
+        height: auto;
+        border-radius: 50px;
+    
+    }
+
+    &__navigation {
+        border-top: 1px solid darkgray;
+        padding-top: 2rem;
+        display: inline-block;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__item {
+        display: inline-block;
+
+        &:not(:last-child) {
+            margin-right: 1.5rem;
+        }
+    }
+
+    &__link {
+        &:link,
+        &:visited {
+            color: lightgray;
+            background-color: #333;
+            text-decoration: none;
+            text-transform: uppercase;
+            display: inline-block;
+            transition: all .2s;
+        }
+
+        &:hover,
+        &:active {
+            color: $Light_green;
+            box-shadow: 0 1rem 2rem rgba(black, .4);
+            transform: rotate(5deg) scale(1.3);
+            border-radius: 5px;
+        }
+    }
+
+    &__copyright {
+        border-top: 1px solid darkgray;
+        padding-top: 2rem;
+        width:40%;
+        float: right;
     }
 }
